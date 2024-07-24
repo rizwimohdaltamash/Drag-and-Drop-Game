@@ -1,0 +1,41 @@
+/* .carousel .control-next,
+.carousel .control-prev {
+    display: none;
+} */
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .carousel-button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .carousel-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-content > div {
+    flex: 1;
+    margin: 0 10px;
+  }
+
+  @media (max-width: 768px) {
+    .carousel-container {
+      width: 230px;
+      /* height:50% */
+    }
+  
+    .carousel-content > div {
+      margin: 0;
+    }
+  }
