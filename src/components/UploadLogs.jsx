@@ -3,7 +3,7 @@ import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../context/Firebase';
 
 const UploadLogs = () => {
-  const [logs, setLogs] = useState([]);
+  const [, setLogs] = useState([]);
   const [pdfs, setPdfs] = useState([]);
 
   useEffect(() => {
